@@ -23,7 +23,8 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    //git config --global --unset https.proxy;
+                    git config --global --add http.proxy "http://vasp-tck-optiplex.plkra.europe.delphiauto.net";
+                    git config --local --add http.proxy "";
                     git 'https://github.com/Tango90/pytest.git';
                 }
             }
