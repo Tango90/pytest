@@ -12,7 +12,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "192.168.31.158:8081"
+        NEXUS_URL = "127.0.0.1:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "tango"
         // Jenkins credential id to authenticate to Nexus OSS
@@ -24,7 +24,7 @@ pipeline {
                 script {
                     // Let's clone the source
                    // git config --global --add http.proxy "http://vasp-tck-optiplex.plkra.europe.delphiauto.net";
-                   // git config --local --add http.proxy "";
+                    git config --local --add http.proxy "http://40002213:Dyn@micDude$@10.9.64.4:8002";
                     git 'https://github.com/Tango90/pytest.git';
                 }
             }
