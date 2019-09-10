@@ -24,8 +24,8 @@ pipeline {
                 script {
                     // Let's clone the source
                    // git config --global --add http.proxy "http://vasp-tck-optiplex.plkra.europe.delphiauto.net";
-                    git config --local --add http.proxy "http://40002213:Dyn@micDude$@10.9.64.4:8002";
-                    git config --local --add https.proxy "https://40002213:Dyn@micDude$@10.9.64.4:8002";
+                   // git config --local --add http.proxy "http://40002213:Dyn@micDude$@10.9.64.4:8002";
+                   // git config --local --add https.proxy "https://40002213:Dyn@micDude$@10.9.64.4:8002";
                     git 'https://github.com/Tango90/pytest.git';
                 }
             }
