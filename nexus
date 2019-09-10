@@ -23,6 +23,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
+                    git config --global --unset https.proxy;
                     git 'https://github.com/Tango90/pytest.git';
                 }
             }
