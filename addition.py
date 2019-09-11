@@ -1,4 +1,4 @@
-# This program adds two numbers:
+# This program addition two numbers:
 num1 = 1.5
 num2 = 6.3
 # Add two numbers
